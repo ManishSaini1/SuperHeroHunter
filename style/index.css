@@ -1,0 +1,108 @@
+/* Background */
+body {
+  background-image: url("https://s3.amazonaws.com/bsciwp/wp-content/uploads/2019/12/08161821/Photo-Apr-20-1-08-25-PM1-1440x1029.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Container with searchBar */
+.container {
+  text-align: center;
+  color: white;
+  background-color: rgba(3, 32, 44, 0.7);
+}
+
+.container h1 {
+  font-weight: 600;
+}
+/* Search bar */
+.input-group input {
+  font-size: 1.2rem;
+  width: 50%;
+}
+button {
+  margin-left: 1%;
+}
+/* Styling for list items and list */
+#auto-complete {
+  color: black;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  margin-top: -1.5%;
+}
+/* li of autosuggest */
+#auto-complete li {
+  width: 30vw;
+  cursor: pointer;
+  /* border-radius: 5px; */
+}
+#auto-complete-container {
+  max-height: 50vh;
+  width: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* Displaying loader animation till search result Complete */
+.loader {
+  border: 10px solid;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-color: rgb(245, 239, 239) transparent transparent;
+  animation-name: spin;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  text-align: left;
+  margin-left: 15vw;
+  margin-top: 20px;
+  display: none;
+}
+/* Div to display when no SuperHero Found */
+.no-super-hero-found {
+  text-align: left;
+  margin-left: 12vw;
+  display: none;
+}
+
+/* Dynamic list display Container */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-left img {
+  height: 15vh;
+  width: 10vw;
+}
+.search-right {
+  margin-top: 10%;
+  font-size: 1.3rem;
+}
+
+/* KeyFrame for loader */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* media query for responsive design */
+@media screen and (max-width: 600px) {
+  .input-group input {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  #auto-complete li {
+    width: 40vw;
+    cursor: pointer;
+    /* border-radius: 5px; */
+  }
+  button {
+    margin-top: 1%;
+  }
+}

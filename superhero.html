@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- responsive meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero</title>
+    <!-- bootstap and font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/hero.css">
+</head>
+<body>
+<!-- container for card and info of hero -->
+    <div class="container">
+<!-- container card for image and stats -->
+    
+      <div class="card" style="width: 20rem;" id='hero-details'>
+        <img src="" class="card-img-top" alt="hero image" id = "hero-image">
+
+      </div>
+      <!-- jumbotron for hero info -->
+      <div class="jumbotron">
+        <h1 class="display-5" id="hero-name"></h1>
+        <h3 id="aliases"></h3>
+        <hr>
+        <div class="lead" id="occupation"></div>
+        <hr class="my-4">
+        <h4 class="lead" id="connections"></h4>
+        <hr>
+        <div id="additional-info"></div>
+        <div id="add-fav">
+        <button class="btn btn-primary btn-lg btn-block" id="btn-add-favourite"> <i class="fa fa-plus"></i> Add To Favourites</button>
+        <button class="btn btn-danger btn-lg btn-block" id="btn-favourite"><i class="fa fa-heart"></i> My Favourites</button>
+        
+        </div>
+      </div>
+    </div>  
+    <!-- Toast message -->
+    <div id="msg-container">
+        <div id="message">
+          Added to Favourites Successfully!
+        </div>
+    </div>
+      
+
+
+   <script type="text/javascript" src="./script//hero.js"></script> 
+   
+   
+</body>
+</html>

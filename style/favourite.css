@@ -1,0 +1,46 @@
+/* background */
+body{
+    background-image: url("https://s3.amazonaws.com/bsciwp/wp-content/uploads/2019/12/08161821/Photo-Apr-20-1-08-25-PM1-1440x1029.jpg");
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Heading for fav page*/
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    background-color:rgba(0,0,0,0.6);
+    padding: 3%;
+}
+/* container containing cards */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+/* setting individual cards */
+.card{
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.9);
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 18rem;
+}
+.card-body
+{
+    flex: 0 1 auto;
+    background-color: rgba(86, 109, 2, 0.171);
+}
+/* card image */
+.card img{
+    padding: 2%;
+}
+/* buttons */
+button{
+    margin: 1%;
+}

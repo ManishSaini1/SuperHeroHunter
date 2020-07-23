@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero</title>
+    <!-- bootstrap and fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style//index.css">
+</head>
+<body>
+<!-- Jumbotron for the main Content -->
+    <div class="jumbotron container">
+
+        <h1 class="display-4">Search your SuperHero or Villan!</h1>
+        
+        <hr class="my-4">
+
+        <!-- <p>Search you favourite SuperHero</p> -->
+        <div class="input-group mb-3">
+            <!-- Search Bar -->
+            <input type="text"  placeholder="Enter name of your hero" id="hero-name" >
+            <button class="btn btn-success btn-lg" id="btn-search"><i class="fa fa-search"></i> Search!</button>
+            <button class="btn btn-danger btn-lg" id="btn-favourite"><i class="fa fa-heart"></i> My Favourites</button>
+        </div>
+        <div class="loader"></div>
+        <div class="no-super-hero-found">No Super Hero Found :( <br> <b>Search Example: Superman</b></div>
+
+          <!-- Div to show auto complete items -->
+          <div id="auto-complete-container">
+            <ul id="auto-complete" class="list-group">
+                <!-- <div class="search-container">
+                    <div class="search-left">
+                      <img src=${i.image.url} alt="" />
+                    </div>
+                    <div class="search-right ">${i.name}</div>
+                </div>  -->
+             </ul>
+          </div>
+          
+
+          
+    </div>
+
+
+    
+    <script type="text/javascript" src="./script/index.js"></script>
+</body>
+</html>
