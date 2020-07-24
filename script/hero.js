@@ -1,3 +1,5 @@
+var element =document.getElementById('btn-add-favourite');
+
 
 //========Accessing the hero==============//
 var xhrRequest = new XMLHttpRequest();
@@ -98,7 +100,12 @@ function showToastMesage(added){
 
     var message;
     if(added){
-        message="Added your SuperHero to Favourites Successfully!"
+        message="Added your SuperHero to Favourites Successfully!";
+      element.in  
+    element.innerHTML=' <button class="btn btn-danger btn-lg btn-block" id="btn-add-favourite"> <i class="fa fa-times"></i>Remove From Favourites</button>';
+        
+        
+
     }else{
         message="Superhero Already Added!"
     }
@@ -129,6 +136,8 @@ function addToFavourite(){
         var names = [];
         names.push(hero);
         window.localStorage.setItem("names", JSON.stringify(names));
+        var element =document.getElementById('btn-add-favourite');
+        console.log("Element", element);
         showToastMesage(true);
     }else{
         var res = containsObject(heroId,storedNames);
