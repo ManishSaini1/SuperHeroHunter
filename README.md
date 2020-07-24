@@ -1,7 +1,7 @@
 <h1>Super Hero Hunter</h1>
 <h2>Link to the Project :
 <br>
-<a href="https://manishsaini1.github.io/SuperHeroHunter/"  target="_blank">https://manishsaini1.github.io/SuperHeroHunter/</a>
+<a href="https://manishsaini1.github.io/SuperHeroHunter/"  target="blank">https://manishsaini1.github.io/SuperHeroHunter/</a>
 </h2>
 <hr>
 <h3> How to run the Website ?</h3>
